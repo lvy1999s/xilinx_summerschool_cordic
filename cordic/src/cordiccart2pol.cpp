@@ -54,7 +54,6 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
 
 	for(int i = 0; i < NO_ITER; i++)
 	{
-#pragma HLS LOOP_TRIPCOUNT min=1 max=16
 #pragma HLS UNROLL
 
 		if (y_current >= 0)
